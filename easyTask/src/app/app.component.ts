@@ -6,7 +6,7 @@ import { DUMMY_USERS } from './dummy-users';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, HeaderComponent, UserComponent],
+  imports: [HeaderComponent, UserComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
@@ -14,4 +14,7 @@ export class AppComponent {
 
   users = DUMMY_USERS;
 
+  onSelectUser(id: string) {
+    console.log("User id selected " + id);
+  }
 }
