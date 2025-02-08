@@ -1,8 +1,11 @@
+@if (isTaskAdded) {
+    <app-new-task (cancel)="onCancelAddTask()" (add)="onSubmitTask($event)" />
+}
 <section id="tasks">
     <header>
         <h2>{{ name }}'s Tasks</h2>
         <menu>
-            <button>Add Task</button>
+            <button (click)="onTaskAdded()">Add Task</button>
         </menu>
     </header>
 
@@ -12,6 +15,5 @@
                 <app-task [task]="item" (complete)="onCompleteTask($event)"/>
             </li>
         }
-        
     </ul>
 </section>
