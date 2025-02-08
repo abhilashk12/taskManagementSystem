@@ -1,0 +1,7 @@
+{
+    "rewrites": [{ "source": "/(.*)", "destination": "/index.html" }],
+    "functions": {},
+    "routes": [{ "handle": "filesystem" }],
+    "public": "dist/easy-task/"
+  }
+  
