@@ -1,8 +1,5 @@
 {
-    "rewrites": [{ "source": "/(.*)", "destination": "/index.html" }],
-    "routes": [{ "src": "/(.*)", "dest": "/index.html" }],
-    "public": "dist/easy-task",
-    "cleanUrls": true,
-    "trailingSlash": false
-  }
-  
+  "rewrites": [
+    { "source": "/(.*)", "destination": "/index.html" }
+  ]
+}
